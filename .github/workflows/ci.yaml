@@ -26,4 +26,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: koudaiii/proxy:${{ github.sha }}
+          tags: |
+            koudaiii/proxy:latest
+            koudaiii/proxy:${{ github.sha }}
